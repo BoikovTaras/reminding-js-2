@@ -1,5 +1,9 @@
 const formatString = function (string) {
-    console.log(string.length)
+  if (string.length <= 40) {
+    return string;
+  } else {
+    return string.slice(0, 40)
+  }
   // твой код
 };
 
